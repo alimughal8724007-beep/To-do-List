@@ -1,0 +1,39 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="/src/style.css" rel="stylesheet">
+</head>
+<body>
+      <div class='flex flex-col items-center justify-center min-h-screen bg-white text-black dark:bg-black dark:text-white'>
+          
+        <!-- THEME BUTTON -->
+        <button id='themeBtn' class='absolute top-3 right-5 px-10 py-2'>&#127770;
+        </button>
+
+        <!-- {/* UPPER BOX */} -->
+        <div class='h-40 w-150 border-2 rounded-3xl p-4 flex justify-between'>
+          <div>
+          <h1 class='w-80 mt-2 font-bold text-3xl'>TO DO APP</h1>
+          <p>Keep it up!Amazed!</p>
+          <div class=' w-full h-3 rounded-full mt-3 bg-gray-300 overflow-hidden'>
+          <div id="progressBar" class="h-full bg-cyan-400 transition-all duration-300" style="width:0%"></div>
+          </div>
+          </div>
+      
+          <div id='taskCount' class='flex items-center justify-center text-4xl bg-blue-500 text-white h-30 w-30 rounded-full border-2'>
+            0/0
+          </div>
+        </div>
+        <!-- {/* MIDDLE BOX */} -->
+        <div class='flex items-center justify-center text-center mt-8 gap-5 w-150'>
+          <input id="taskInput" class='h-15 w-130 border-2 rounded-xl px-5' type='text' placeholder='Write Your Task here...'/>
+          <button id="addbtn" class='w-15 h-15 rounded-full border-2 text-4xl flex justify-center items-center'>+</button>
+        </div>
+        <ul id='taskList' class='mt-8 w-150 flex flex-col gap-3'>
+        </ul>
+      </div> 
+        <script src="./src/main.js"></script>
+</body>
+</html>
